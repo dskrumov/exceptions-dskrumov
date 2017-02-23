@@ -3,8 +3,8 @@ package com.company.arrayoperation;
 /**
  * Custom Array Exception
  */
-public class arrayRangeException extends Exception {
-    public arrayRangeException(String msg) {
+public class ArrayRangeException extends Exception {
+    public ArrayRangeException(String msg) {
         super(msg);
     }
 }

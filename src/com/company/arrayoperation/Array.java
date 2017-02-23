@@ -1,15 +1,16 @@
 package com.company.arrayoperation;
 
 
+import java.util.Arrays;
+
 public class Array {
     /**
      * Fields
      */
     private int[] array;
-    private int val;
+    private int index;
 
     /**
-     *
      * @param size is the size of the array.
      */
     public Array(int size) {
@@ -18,15 +19,16 @@ public class Array {
 
     /**
      * Add method to add values in the array
-     * @param Array is the array
-     * @throws arrayRangeException is the custom exception
+     *
+     * @param array is the array
+     * @throws ArrayRangeException is the custom exception
      */
-    public void add(int Array) throws arrayRangeException {
-        if (val < array.length) {
-            array[val] = Array;
-            val++;
+    public void add(int array) throws ArrayRangeException {
+        if (index < this.array.length) {
+            this.array[index] = array;
+            index++;
         } else
-            throw new arrayRangeException("Out of range Array. Set bigger Array size.");
+            throw new ArrayRangeException("Out of range array. Set bigger array size.");
     }
 
     /**
@@ -40,20 +42,20 @@ public class Array {
 
     /**
      * Remove the last element of the array.
-     * @throws arrayRangeException is the custom exception
+     *
+     * @throws ArrayRangeException is the custom exception
      */
-    public void removeElements() throws arrayRangeException {
+    public void removeElements() throws ArrayRangeException {
 
-        for (int i = 0; i < array.length - 1; i++) {
-            System.out.print(" " + array[i]);
-            if (array[i] == 0) {
-                throw new arrayRangeException("You can not remove a element from an empty Array");
-            }
-        }
+        int[] array2 = Arrays.copyOf(array, array.length - 1);
+        if(array2.length==0)throw new ArrayRangeException("The array is empty. Add first elements then use remove method.");
+        System.out.println(" ");
+        System.out.println(Arrays.toString(array2));
     }
-
-
 }
+
+
+
 
 
 
