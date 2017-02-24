@@ -39,7 +39,6 @@ public class Array {
             System.out.print(" " + array[i]);
         }
     }
-
     /**
      * Remove the last element of the array.
      *
@@ -48,7 +47,8 @@ public class Array {
     public void removeElements() throws ArrayRangeException {
 
         int[] array2 = Arrays.copyOf(array, array.length - 1);
-        if(array2.length==0)throw new ArrayRangeException("The array is empty. Add first elements then use remove method.");
+        if (array2.length == 0)
+            throw new ArrayRangeException("The array is empty. Add first elements then use remove method.");
         System.out.println(" ");
         System.out.println(Arrays.toString(array2));
     }
