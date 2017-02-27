@@ -1,14 +1,12 @@
 package com.company.arrayoperation;
 
-
-import java.util.Arrays;
-
 public class Array {
     /**
      * Fields
      */
     private int[] array;
-    private int index;
+    private int index = 0;
+
 
     /**
      * @param size is the size of the array.
@@ -39,20 +37,26 @@ public class Array {
             System.out.print(" " + array[i]);
         }
     }
+
     /**
      * Remove the last element of the array.
      *
      * @throws ArrayRangeException is the custom exception
      */
-    public void removeElements() throws ArrayRangeException {
+    public void removeElement() throws ArrayRangeException {
 
-        int[] array2 = Arrays.copyOf(array, array.length - 1);
-        if (array2.length == 0)
-            throw new ArrayRangeException("The array is empty. Add first elements then use remove method.");
-        System.out.println(" ");
-        System.out.println(Arrays.toString(array2));
+        if (array.length <= 0 && index <= 0) {
+            throw new ArrayRangeException("Can not remove an element from empty array. Set bigger size ");
+        } else {
+            array[index - 1] = 0;
+            index--;
+        }
     }
 }
+
+
+
+
 
 
 
