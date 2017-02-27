@@ -1,5 +1,8 @@
 package com.company.arrayoperation;
 
+
+import java.util.Arrays;
+
 public class Array {
     /**
      * Fields
@@ -37,7 +40,6 @@ public class Array {
             System.out.print(" " + array[i]);
         }
     }
-
     /**
      * Remove the last element of the array.
      *
