@@ -1,8 +1,5 @@
 package com.company.readnumbers;
 
-/**
- * Created by clouway on 21.02.17.
- */
 public class Read {
     public void ReadNumbers(int a, int b) throws Customexception {
         boolean result = true;
@@ -15,13 +12,5 @@ public class Read {
         System.out.println(result);
         System.out.println(b);
         System.out.println(result);
-
-
     }
 }
-
-
-
-
-
-
