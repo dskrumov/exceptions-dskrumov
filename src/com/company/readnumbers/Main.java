@@ -1,9 +1,9 @@
 package com.company.readnumbers;
 
 public class Main {
-    public static void main(String[] args) throws OutofIntegerRange {
-        Numbers numbers = new Numbers();
+    public static void main(String[] args) throws OutofRangeException {
+        Range numbers = new Range();
         numbers.range(1, 10);
-        numbers.setNumbers(10, 10);
+        numbers.contains(2, 2);
     }
 }
