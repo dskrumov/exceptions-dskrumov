@@ -1,8 +1,9 @@
 package com.company.readnumbers;
 
 public class Main {
-    public static void main(String[] args) throws Customexception {
-        Read read = new Read();
-        read.ReadNumbers(1, 10);
+    public static void main(String[] args) throws OutofIntegerRange {
+        Numbers numbers = new Numbers();
+        numbers.range(1, 100);
+        numbers.setNumbers(1, 10);
     }
 }
