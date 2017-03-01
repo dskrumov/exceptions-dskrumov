@@ -1,15 +1,3 @@
-
-
-.gitignore
-
 .idea
-out
-.idea/modules.xml
-.idea/description.html
-.idea/project-template.xml
-.idea/misc.xml
-.idea/vcs.xml
-.idea/uiDesigner.xml
-.idea/workspace.xml
-*.iml
-*.ipr
+exceptions.iml
+/out
