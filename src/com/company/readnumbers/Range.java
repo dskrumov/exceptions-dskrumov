@@ -5,15 +5,15 @@ public class Range {
     private int start;
     private int end;
 
-
-    public void range(int start, int end) {
+    public Range(int start, int end) {
         this.start = start;
         this.end = end;
     }
 
-    public boolean contains(int a, int b) throws OutofRangeException {
+
+    public boolean contains(int number) throws OutofRangeException {
         boolean result = true;
-        if (a < end && a > start && b < end && b >start) {
+        if (number <= end && number >= start) {
             return result;
         } else throw new OutofRangeException("False: Numbers out of range");
 
