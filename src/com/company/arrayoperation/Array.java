@@ -1,15 +1,12 @@
 package com.company.arrayoperation;
 
 
-import java.util.Arrays;
-
 public class Array {
     /**
      * Fields
      */
     private int[] array;
     private int index = 0;
-
 
     /**
      * @param size is the size of the array.
@@ -31,7 +28,6 @@ public class Array {
         } else
             throw new ArrayRangeException("Out of range array. Set bigger array size.");
     }
-
     /**
      * Print all elements of the array
      */
@@ -55,31 +51,3 @@ public class Array {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

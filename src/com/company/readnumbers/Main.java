@@ -1,11 +1,13 @@
 package com.company.readnumbers;
 
-/**
- * Created by clouway on 21.02.17.
- */
 public class Main {
-    public static void main(String[] args) throws Customexception {
-        Read read = new Read();
-        read.ReadNumbers(1, 10);
+    public static void main(String[] args) throws OutofRangeException {
+
+
+        Range numbers = new Range(1, 10);
+
+        numbers.contains(2);
+        numbers.contains(3);
+        numbers.contains(0);
     }
 }

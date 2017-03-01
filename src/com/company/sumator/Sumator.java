@@ -6,15 +6,7 @@ package com.company.sumator;
 public class Sumator {
 
     public int sum(String a, String b) {
-
         Integer result = Integer.parseInt(a) + Integer.parseInt(b);
        return result;
-
-
-
     }
-
-
 }
-
-
